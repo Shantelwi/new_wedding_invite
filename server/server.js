@@ -33,7 +33,7 @@ const logger = winston.createLogger({
 });
 
 app.use(cors({
-    origin:'http://localhost:3000',
+    origin:['http://localhost:3000','https://main.d2rhfblr3h62yy.amplifyapp.com'],
     methods:'GET,HEAD,PUT,PATCH,POST,DELETE',
     credentials:true,
     optionsSuccessStatus:204,
