@@ -95,6 +95,10 @@ const validate = [
 ];
 
 app.post('/api/rsvp', validate, async (req, res) => {
+    res.header("Access-Control-Allow-Origin", "https://main.d2rhfblr3h62yy.amplifyapp.com");
+    res.header("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
+    res.header("Access-Control-Allow-Headers", "Content-Type, Authorization");
+
     try {
         console.log('Received RSVP request:', req.body);
 
